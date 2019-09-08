@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sun Sep  8 18:59:12 2019
+| Date         : Sun Sep  8 23:41:22 2019
 | Host         : DESKTOP-4JPPH95 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file lab1_methodology_drc_routed.rpt -pb lab1_methodology_drc_routed.pb -rpx lab1_methodology_drc_routed.rpx
 | Design       : lab1
@@ -34,12 +34,12 @@ Table of Contents
 -----------------
 TIMING-18#1 Warning
 Missing input or output delay  
-An input delay is missing on btnc relative to clock(s) sys_clk_pin
+An input delay is missing on btnC relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on btnu relative to clock(s) sys_clk_pin
+An input delay is missing on btnU relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#3 Warning

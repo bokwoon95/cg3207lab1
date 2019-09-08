@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Sun Sep  8 18:59:13 2019
+| Date             : Sun Sep  8 23:41:22 2019
 | Host             : DESKTOP-4JPPH95 running 64-bit major release  (build 9200)
 | Command          : report_power -file lab1_power_routed.rpt -pb lab1_power_summary_routed.pb -rpx lab1_power_routed.rpx
 | Design           : lab1
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.104        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.006        |
+| Dynamic (W)              | 0.007        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.5         |
@@ -52,13 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      142 |       --- |             --- |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      141 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       55 |     63400 |            0.09 |
 |   CARRY4       |    <0.001 |        5 |     15850 |            0.03 |
 |   Register     |    <0.001 |       61 |    126800 |            0.05 |
-|   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |      101 |       --- |             --- |
+|   Others       |     0.000 |        5 |       --- |             --- |
+| Signals        |    <0.001 |       99 |       --- |             --- |
 | I/O            |     0.005 |       35 |       210 |           16.67 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.104 |          |           |                 |
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.002 |      0.015 |
+| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,7 +140,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| lab1        |     0.006 |
+| lab1        |     0.007 |
 |   get_mem_0 |     0.001 |
 +-------------+-----------+
 

@@ -7,7 +7,7 @@ end clock_enable_tb;
 
 architecture behavioral of clock_enable_tb is
   component clock_enable
-    port(
+    port (
       clk : in std_logic;
       btnU : in std_logic;
       btnC : in std_logic;
