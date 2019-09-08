@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep  8 14:37:43 2019
+# Process ID: 340
+# Current directory: C:/Users/bokwoon/Documents/Lab1/Lab1.runs/synth_1
+# Command line: vivado.exe -log Clock_Enable.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Clock_Enable.tcl
+# Log file: C:/Users/bokwoon/Documents/Lab1/Lab1.runs/synth_1/Clock_Enable.vds
+# Journal file: C:/Users/bokwoon/Documents/Lab1/Lab1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Clock_Enable.tcl -notrace

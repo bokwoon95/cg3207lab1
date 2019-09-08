@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/sources_1/imports/old/clock_enable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_enable'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/sim_1/imports/old/clock_enable_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_enable_tb'

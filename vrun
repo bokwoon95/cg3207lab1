@@ -1,0 +1,42 @@
+#!/bin/bash
+
+hasSuffix () { case "$1" in *"$2") true;; *) false;; esac }
+hasPrefix () { case "$1" in "$2"*) true;; *) false;; esac }
+contains () { case "$1" in *"$2"*) true;; *) false;; esac }
+equals () { case "$1" in "$2") true;; *) false;; esac }
+
+argc="$#";: "$((i=0))"
+while [ "$i" -lt "$argc" ]; do
+  if equals "$1" '--test'; then shift; Test="$1"
+  elif equals "$1" '--time'; then shift; Time="$1"
+  elif equals "$1" '--entity'; then shift; Entity="$1"
+  elif [ "$1" ]; then File="$1"
+  fi
+  shift;: "$((i=i+1))"
+done
+
+if [ ! "$Entity" ]; then
+  Entity="$(basename "$File" '.vhd')"
+fi
+
+cmd="ghdl -a $File && ghdl -e $Entity"
+echo "$cmd"
+if ! eval "$cmd"; then exit 1; fi
+
+if hasSuffix "$Entity" '_tb' || [ "$Time" ] ; then
+  [ ! "$Time" ] && Time='1us'
+  cmd="ghdl -r $Entity --stop-time=$Time --vcd=$Entity.vcd && gtkwave.exe $Entity.vcd"
+else
+  cmd="ghdl -r $Entity"
+fi
+echo "$cmd"
+if ! eval "$cmd"; then exit 1; fi
+
+if [ "$Test" ]; then
+  File="$Test"
+  Entity="$(basename "$File" '.vhd')"
+  [ ! "$Time" ] && Time='1us'
+  cmd="ghdl -a $File && ghdl -e $Entity && ghdl -r $Entity --stop-time=$Time --vcd=$Entity.vcd && gtkwave.exe $Entity.vcd"
+  echo "$cmd"
+  if ! eval "$cmd"; then exit 1; fi
+fi

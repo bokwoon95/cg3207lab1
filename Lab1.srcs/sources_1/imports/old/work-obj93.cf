@@ -1,0 +1,4 @@
+v 4
+file . "clock_enable.vhd" "945cb74c560fc22637f7516dac2a231c0d91ad96" "20190908081659.190":
+  entity clock_enable at 5( 183) + 0 on 17;
+  architecture behavioral of clock_enable at 18( 568) + 0 on 18;
