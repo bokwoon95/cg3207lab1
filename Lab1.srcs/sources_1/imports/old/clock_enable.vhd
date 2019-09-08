@@ -26,14 +26,13 @@ begin
       if btnC = '1' then
         enable <= '0';
       else
-        enable <= '1';
-        -- counter <= std_logic_vector(unsigned(counter) + 1);
-        -- if (btnU = '1' and counter >= onemillion) or (btnU = '0' and counter >= quartermillion) then
-        --   enable <= '1';
-        --   counter <= x"00000";
-        -- else
-        --   enable <= '0';
-        -- end if;
+        counter <= std_logic_vector(unsigned(counter) + 1);
+        if (btnU = '1' and counter >= speed_one) or (btnU = '0' and counter >= speed_four) then
+          enable <= '1';
+          counter <= x"00000";
+        else
+          enable <= '0';
+        end if;
       end if;
     end if;
   end process;
