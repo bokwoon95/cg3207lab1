@@ -12,15 +12,18 @@ entity clock_enable is
     btnU : in std_logic; -- button BTNU for 4Hz speed
     btnC : in std_logic; -- button BTNC for pause
     enable : out std_logic -- output signal used to enable the reading of next memory data
-    );
+  );
 end clock_enable;
 
 architecture behavioral of clock_enable is
   signal counter : std_logic_vector(19 downto 0) := x"00000";
 begin
   process(clk)
-    constant speed_one : std_logic_vector(19 downto 0) := x"F4240";
-    constant speed_four : std_logic_vector(19 downto 0) := x"3D090";
+    -- constant speed_one : std_logic_vector(19 downto 0) := x"F4240";
+    -- constant speed_four : std_logic_vector(19 downto 0) := x"3D090";
+    -- For simulations
+    constant speed_one : std_logic_vector(19 downto 0) := x"00064";
+    constant speed_four : std_logic_vector(19 downto 0) := x"00019";
   begin
     if rising_edge(clk) then
       if btnC = '1' then

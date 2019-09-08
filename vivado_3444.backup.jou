@@ -2,13 +2,19 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Sep  8 17:01:14 2019
-# Process ID: 4160
+# Start of session at: Sun Sep  8 14:20:46 2019
+# Process ID: 3444
 # Current directory: C:/Users/bokwoon/Documents/Lab1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2940 C:\Users\bokwoon\Documents\Lab1\Lab1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6864 C:\Users\bokwoon\Documents\Lab1\Lab1.xpr
 # Log file: C:/Users/bokwoon/Documents/Lab1/vivado.log
 # Journal file: C:/Users/bokwoon/Documents/Lab1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/bokwoon/Documents/Lab1/Lab1.xpr
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation
+source clock_enable_tb.tcl
+close_sim

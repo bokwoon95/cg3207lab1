@@ -3,59 +3,59 @@
 -- Fill in the blank to complete this module 
 -- (c) Rajesh Panicker, ECE, NUS
 
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 
-entity Get_MEM is
-  -- fundamental clock 100MHz
+entity get_mem is
+  -- fundamental clock 100mhz
   -- enable signal to read the next content
   -- 32 bits memory contents for 7-segments display
-  -- 1-bit signal rerequied for LEDs, indicating which half of the Memory data is displaying on LEDs
-  Port ( 
+  -- 1-bit signal rerequied for leds, indicating which half of the memory data is displaying on leds
+  port ( 
     clk : in std_logic;
     enable : in std_logic;
     data : out std_logic_vector(31 downto 0);
     upper_lower : out std_logic
     );
-end Get_MEM;
+end get_mem;
 
-architecture Behavioral of Get_MEM is
-  -- declare address for INSTR_MEM and DATA_CONST_MEM
+architecture behavioral of get_mem is
+  -- declare address for instr_mem and data_const_mem
   signal addr : std_logic_vector(8 downto 0) := (others => '0');
 
-  -- declare INSTR_MEM and DATA_CONST_MEM
-  type MEM_128x32 is array (0 to 127) of std_logic_vector (31 downto 0);
-  constant INSTR_MEM : MEM_128x32 := (
-    x"E59F11F8",
-    x"E59F21F8",
-    x"E59F3200",
-    x"E5924000",
-    x"E5814000",
-    x"E2533001",
-    x"1AFFFFFD",
-    x"E59F31EC",
-    x"EAFFFFFE",
+  -- declare instr_mem and data_const_mem
+  type mem_128x32 is array (0 to 127) of std_logic_vector (31 downto 0);
+  constant instr_mem : mem_128x32 := (
+    x"e59f11f8",
+    x"e59f21f8",
+    x"e59f3200",
+    x"e5924000",
+    x"e5814000",
+    x"e2533001",
+    x"1afffffd",
+    x"e59f31ec",
+    x"eafffffe",
     others => x"00000000"
   );
-  constant DATA_CONST_MEM : MEM_128x32 := (
-    x"00000C00",
-    x"00000C04",
-    x"00000C08",
-    x"00000C0C",
+  constant data_const_mem : mem_128x32 := (
+    x"00000c00",
+    x"00000c04",
+    x"00000c08",
+    x"00000c0c",
     x"00000004",
     x"00000800",
-    x"ABCD1234",
-    x"6C6C6548",
-    x"6F57206F",
-    x"21646C72",
+    x"abcd1234",
+    x"6c6c6548",
+    x"6f57206f",
+    x"21646c72",
     x"00212121",
     others => x"00000000"
   );
 
 ----------------------------------------------------------------
--- Instruction Memory
+-- instruction memory
 ----------------------------------------------------------------
 
 
@@ -67,7 +67,7 @@ architecture Behavioral of Get_MEM is
 
 
 ----------------------------------------------------------------
--- Data (Constant) Memory
+-- data (constant) memory
 ----------------------------------------------------------------
 
 
@@ -97,4 +97,4 @@ begin
 
   end process;
 
-end Behavioral;
+end behavioral;
