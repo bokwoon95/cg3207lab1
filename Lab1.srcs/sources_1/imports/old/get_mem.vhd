@@ -7,18 +7,13 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-
 entity get_mem is
-  -- fundamental clock 100mhz
-  -- enable signal to read the next content
-  -- 32 bits memory contents for 7-segments display
-  -- 1-bit signal rerequied for leds, indicating which half of the memory data is displaying on leds
   port ( 
-    clk : in std_logic;
-    enable : in std_logic;
-    data : out std_logic_vector(31 downto 0);
-    upper_lower : out std_logic
-    );
+    clk : in std_logic; -- fundamental clock 100mhz
+    enable : in std_logic; -- enable signal to read the next content
+    data : out std_logic_vector(31 downto 0); -- 32 bits memory contents for 7-segments display
+    upper_lower : out std_logic -- 1-bit signal rerequied for leds, indicating which half of the memory data is displaying on leds
+  );
 end get_mem;
 
 architecture behavioral of get_mem is
@@ -27,6 +22,16 @@ architecture behavioral of get_mem is
 
   -- declare instr_mem and data_const_mem
   type mem_128x32 is array (0 to 127) of std_logic_vector (31 downto 0);
+
+  -- declare read from instr (0) or data (1)
+  signal instr_or_data : std_logic := '0';
+
+  -- declare 9 bit counter
+  signal nine_bit_counter : std_logic_vector (8 downto 0) := (others => '0');
+
+----------------------------------------------------------------
+-- instruction memory
+----------------------------------------------------------------
   constant instr_mem : mem_128x32 := (
     x"e59f11f8",
     x"e59f21f8",
@@ -39,6 +44,10 @@ architecture behavioral of get_mem is
     x"eafffffe",
     others => x"00000000"
   );
+
+----------------------------------------------------------------
+-- data (constant) memory
+----------------------------------------------------------------
   constant data_const_mem : mem_128x32 := (
     x"00000c00",
     x"00000c04",
@@ -54,47 +63,32 @@ architecture behavioral of get_mem is
     others => x"00000000"
   );
 
-----------------------------------------------------------------
--- instruction memory
-----------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-----------------------------------------------------------------
--- data (constant) memory
-----------------------------------------------------------------
-
-
-
-
-
-
-
-
 
 begin
-
   -- determine upper_lower by corresponding input
-
+  upper_lower <= nine_bit_counter(0);
 
   -- determine corresponding memory data that should be displayed on 7-segments
-
-
-
-  -- determine memory index "addr" accordingly
   process(clk)
   begin
+    if rising_edge(clk) then
+      if nine_bit_counter(8) = '1' then
+        data <= instr_mem(to_integer(unsigned(addr)));
+      else
+        data <= data_const_mem(to_integer(unsigned(addr)));
+      end if;
+    end if;
+  end process;
 
+  -- determine memory index "addr" accordingly
+  addr <= nine_bit_counter(7 downto 1);
 
-
-
-
+  -- 9-bit counter
+  process(clk)
+  begin
+    if rising_edge(clk) and enable = '1' then
+      nine_bit_counter <= std_logic_vector(unsigned(nine_bit_counter) + 1);
+    end if;
   end process;
 
 end behavioral;

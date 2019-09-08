@@ -12,3 +12,5 @@
 start_gui
 open_project C:/Users/bokwoon/Documents/Lab1/Lab1.xpr
 update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/bokwoon/Documents/old/Nexys4_Master_Lab1.xdc
+import_files -fileset constrs_1 C:/Users/bokwoon/Documents/old/Nexys4_Master_Lab1.xdc

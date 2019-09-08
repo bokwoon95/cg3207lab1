@@ -8,7 +8,7 @@ use ieee.numeric_std.all;
 
 entity clock_enable is
   port(
-    clk : in std_logic; -- fundamental clock 1MHz
+    clk : in std_logic; -- fundamental clock 100MHz
     btnU : in std_logic; -- button BTNU for 4Hz speed
     btnC : in std_logic; -- button BTNC for pause
     enable : out std_logic -- output signal used to enable the reading of next memory data
