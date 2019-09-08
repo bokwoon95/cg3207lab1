@@ -14,6 +14,7 @@ architecture behavioral of clock_enable_tb is
       enable : out std_logic
     );
   end component;
+
   signal clk : std_logic := '1';
   signal btnU, btnC, enable : std_logic;
 begin

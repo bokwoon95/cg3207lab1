@@ -2,15 +2,33 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Sep  8 17:01:14 2019
-# Process ID: 4160
+# Start of session at: Sun Sep  8 18:46:18 2019
+# Process ID: 9200
 # Current directory: C:/Users/bokwoon/Documents/Lab1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2940 C:\Users\bokwoon\Documents\Lab1\Lab1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5604 C:\Users\bokwoon\Documents\Lab1\Lab1.xpr
 # Log file: C:/Users/bokwoon/Documents/Lab1/vivado.log
 # Journal file: C:/Users/bokwoon/Documents/Lab1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/bokwoon/Documents/Lab1/Lab1.xpr
 update_compile_order -fileset sources_1
-add_files -fileset constrs_1 -norecurse C:/Users/bokwoon/Documents/old/Nexys4_Master_Lab1.xdc
-import_files -fileset constrs_1 C:/Users/bokwoon/Documents/old/Nexys4_Master_Lab1.xdc
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top lab1 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc
+file delete -force C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/bokwoon/Downloads/Lab_1_VHDL_Template/Nexys4_Master_Lab1.xdc
+import_files -fileset constrs_1 C:/Users/bokwoon/Downloads/Lab_1_VHDL_Template/Nexys4_Master_Lab1.xdc
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1

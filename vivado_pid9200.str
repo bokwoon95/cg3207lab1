@@ -1,0 +1,309 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 9200
+License: Customer
+
+Current time: 	Sun Sep 08 18:46:35 SRET 2019
+Time zone: 	Singapore Standard Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 2560x1600
+Screen resolution (DPI): 175
+Available screens: 1
+Available disk space: 89 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=21
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	bokwoon
+User home directory: C:/Users/bokwoon
+User working directory: C:/Users/bokwoon/Documents/Lab1
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/bokwoon/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/bokwoon/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/bokwoon/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/bokwoon/Documents/Lab1/vivado.log
+Vivado journal file location: 	C:/Users/bokwoon/Documents/Lab1/vivado.jou
+Engine tmp dir: 	C:/Users/bokwoon/Documents/Lab1/.Xil/Vivado-9200-DESKTOP-4JPPH95
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 616 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\bokwoon\Documents\Lab1\Lab1.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/bokwoon/Documents/Lab1/Lab1.xpr 
+// Tcl Message: open_project C:/Users/bokwoon/Documents/Lab1/Lab1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 90 MB (+92080kb) [00:00:17]
+// [Engine Memory]: 638 MB (+517958kb) [00:00:17]
+// [GUI Memory]: 106 MB (+12320kb) [00:00:18]
+// [GUI Memory]: 128 MB (+17163kb) [00:00:19]
+// [Engine Memory]: 671 MB (+515kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  7802 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 711 MB. GUI used memory: 67 MB. Current time: 9/8/19, 6:46:44 PM SRET
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 728.613 ; gain = 101.996 
+// Project name: Lab1; location: C:/Users/bokwoon/Documents/Lab1; part: xc7a100tcsg324-1
+// [Engine Memory]: 722 MB (+18790kb) [00:00:24]
+dismissDialog("Open Project"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (lab1.vhd) elapsed time: 0.2s
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab1(behavioral) (lab1.vhd)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab1(behavioral) (lab1.vhd)]", 2, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 728 MB. GUI used memory: 66 MB. Current time: 9/8/19, 6:47:37 PM SRET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// by (cl):  Set as Top : addNotify
+// Tcl Message: set_property top lab1 [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 8); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 8); // B (F, cl)
+// [Engine Memory]: 760 MB (+2066kb) [00:01:35]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Sep  8 18:48:01 2019] Launched synth_1... Run output will be captured here: C:/Users/bokwoon/Documents/Lab1/Lab1.runs/synth_1/runme.log [Sun Sep  8 18:48:02 2019] Launched impl_1... Run output will be captured here: C:/Users/bokwoon/Documents/Lab1/Lab1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 21 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "4 errors"); // h (Q, cl)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 9 bits, source has 7 bits [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/sources_1/imports/old/get_mem.vhd:84]. ]", 1, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\bokwoon\Documents\Lab1\Lab1.srcs\sources_1\imports\old\get_mem.vhd;-;;-;16;-;line;-;84;-;;-;16;-;"); // ah (O, cl)
+// Elapsed time: 31 seconds
+selectCodeEditor("get_mem.vhd", 440, 156); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Resetting Runs : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Sun Sep  8 18:49:57 2019] Launched synth_1... Run output will be captured here: C:/Users/bokwoon/Documents/Lab1/Lab1.runs/synth_1/runme.log [Sun Sep  8 18:49:57 2019] Launched impl_1... Run output will be captured here: C:/Users/bokwoon/Documents/Lab1/Lab1.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 87 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "4 critical warnings"); // h (Q, cl)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/sources_1/imports/old/get_mem.vhd:87]. ]", 1, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3848] Net dp in module/entity lab1 does not have driver. [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/sources_1/imports/old/lab1.vhd:16]. ]", 2, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design lab1 has unconnected port dp. ]", 3, true); // ah (O, cl) - Node
+// TclEventType: RUN_STEP_COMPLETED
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-584] No ports matched 'btnC'. [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc:194]. ]", 4, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc:194]. ]", 5, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Constraints 18-5210] No constraints selected for write.. Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.. ]", 6, false); // ah (O, cl)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "4 critical warnings"); // h (Q, cl)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc:194]. ]", 5); // ah (O, cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 455ms to process. Increasing delay to 3000 ms.
+// Elapsed time: 188 seconds
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "4 critical warnings"); // h (Q, cl)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/sources_1/imports/old/get_mem.vhd:87]. ]", 1, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/sources_1/imports/old/get_mem.vhd:87]. ]", 1, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\bokwoon\Documents\Lab1\Lab1.srcs\sources_1\imports\old\get_mem.vhd;-;;-;16;-;line;-;87;-;;-;16;-;"); // ah (O, cl)
+// Elapsed time: 16 seconds
+typeControlKey(null, null, 'z');
+// HMemoryUtils.trashcanNow. Engine heap size: 813 MB. GUI used memory: 71 MB. Current time: 9/8/19, 6:55:23 PM SRET
+// Elapsed time: 18 seconds
+selectCodeEditor("get_mem.vhd", 214, 486); // cl (w, cl)
+selectCodeEditor("get_mem.vhd", 98, 270); // cl (w, cl)
+selectCodeEditor("get_mem.vhd", 184, 236); // cl (w, cl)
+// [Engine Memory]: 813 MB (+14994kb) [00:09:28]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3848] Net dp in module/entity lab1 does not have driver. [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/sources_1/imports/old/lab1.vhd:16]. ]", 2, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-3331] design lab1 has unconnected port dp. ]", 3, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-584] No ports matched 'btnC'. [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc:194]. ]", 4, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc:194]. ]", 5, true); // ah (O, cl) - Node
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4_Master_Lab1.xdc]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4_Master_Lab1.xdc]", 7, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// aE (cl): Remove Sources: addNotify
+// by (aE):  Remove Sources : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc 
+// Tcl Message: file delete -force C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/old/Nexys4_Master_Lab1.xdc 
+dismissDialog("Remove Sources"); // by (aE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 6, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, c)
+// Elapsed time: 10 seconds
+setFileChooser("C:/Users/bokwoon/Downloads/Lab_1_VHDL_Template/Nexys4_Master_Lab1.xdc");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 15 seconds
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse C:/Users/bokwoon/Downloads/Lab_1_VHDL_Template/Nexys4_Master_Lab1.xdc 
+// c (cl): Add Sources: addNotify
+// by (c):  Add Constraint  : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 C:/Users/bokwoon/Downloads/Lab_1_VHDL_Template/Nexys4_Master_Lab1.xdc 
+dismissDialog("Add Constraint"); // by (c)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 6, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 6, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4_Master_Lab1.xdc]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys4_Master_Lab1.xdc]", 7, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Sep  8 18:56:55 2019] Launched synth_1... Run output will be captured here: C:/Users/bokwoon/Documents/Lab1/Lab1.runs/synth_1/runme.log [Sun Sep  8 18:56:55 2019] Launched impl_1... Run output will be captured here: C:/Users/bokwoon/Documents/Lab1/Lab1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1576 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 320 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cl)
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR_AND_CRITICAL_WARNING_MESSAGES, "4 critical warnings"); // h (Q, cl)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Vivado 12-584] No ports matched 'btnC'. [C:/Users/bokwoon/Documents/Lab1/Lab1.srcs/constrs_1/imports/Lab_1_VHDL_Template/Nexys4_Master_Lab1.xdc:194]. ]", 4, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\bokwoon\Documents\Lab1\Lab1.srcs\constrs_1\imports\Lab_1_VHDL_Template\Nexys4_Master_Lab1.xdc;-;;-;16;-;line;-;194;-;;-;16;-;"); // ah (O, cl)
+// [GUI Memory]: 136 MB (+1820kb) [00:16:06]

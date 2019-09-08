@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1567924659">
-  <File Type="BITSTR-BMM" Name="Clock_Enable_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Clock_Enable_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Clock_Enable_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="Clock_Enable_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="Clock_Enable.tcl"/>
-  <File Type="OPT-TIMING" Name="Clock_Enable_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Clock_Enable_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="Clock_Enable_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="Clock_Enable_reports.tcl"/>
-  <File Type="OPT-DRC" Name="Clock_Enable_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="Clock_Enable.hwdef"/>
-  <File Type="PWROPT-DCP" Name="Clock_Enable_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="Clock_Enable_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Clock_Enable_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="Clock_Enable_placed.dcp"/>
-  <File Type="PLACE-IO" Name="Clock_Enable_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Clock_Enable_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="Clock_Enable_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Clock_Enable_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="Clock_Enable_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Clock_Enable_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Clock_Enable_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="Clock_Enable.bgn"/>
-  <File Type="PLACE-TIMING" Name="Clock_Enable_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Clock_Enable_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="Clock_Enable.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Clock_Enable_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Clock_Enable_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Clock_Enable_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="Clock_Enable.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="Clock_Enable_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Clock_Enable_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="Clock_Enable_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Clock_Enable_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="Clock_Enable_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="Clock_Enable_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1567940215">
+  <File Type="BITSTR-BMM" Name="lab1_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="lab1_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="lab1_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="lab1_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="lab1.tcl"/>
+  <File Type="OPT-TIMING" Name="lab1_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="lab1_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="lab1_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="lab1_reports.tcl"/>
+  <File Type="OPT-DRC" Name="lab1_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="lab1.hwdef"/>
+  <File Type="PWROPT-DCP" Name="lab1_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="lab1_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="lab1_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="lab1_placed.dcp"/>
+  <File Type="PLACE-IO" Name="lab1_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="lab1_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="lab1_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="lab1_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="lab1_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="lab1_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="lab1_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="lab1.bgn"/>
+  <File Type="PLACE-TIMING" Name="lab1_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="lab1_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="lab1.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="lab1_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="lab1_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="lab1_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="lab1.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="lab1_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="lab1_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="lab1_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="lab1_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="lab1_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="lab1_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Clock_Enable.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="Clock_Enable_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Clock_Enable.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Clock_Enable_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Clock_Enable_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="Clock_Enable.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Clock_Enable_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Clock_Enable_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="Clock_Enable_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Clock_Enable_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Clock_Enable_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="Clock_Enable_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Clock_Enable_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="Clock_Enable_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Clock_Enable_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Clock_Enable_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Clock_Enable_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Clock_Enable_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Clock_Enable_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Clock_Enable_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Clock_Enable_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Clock_Enable_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Clock_Enable_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Clock_Enable_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Clock_Enable_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="Clock_Enable.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Clock_Enable_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="Clock_Enable.rbt"/>
-  <File Type="BITSTR-NKY" Name="Clock_Enable.nky"/>
-  <File Type="BG-DRC" Name="Clock_Enable.drc"/>
-  <File Type="RDI-RDI" Name="Clock_Enable.vdi"/>
+  <File Type="BITSTR-LTX" Name="lab1.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="lab1_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="lab1.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="lab1_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lab1_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="lab1.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lab1_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="lab1_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="lab1_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="lab1_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="lab1_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="lab1_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="lab1_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="lab1_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="lab1_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="lab1_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="lab1_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="lab1_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="lab1_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="lab1_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="lab1_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="lab1_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="lab1_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="lab1_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="lab1_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="lab1.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="lab1_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="lab1.rbt"/>
+  <File Type="BITSTR-NKY" Name="lab1.nky"/>
+  <File Type="BG-DRC" Name="lab1.drc"/>
+  <File Type="RDI-RDI" Name="lab1.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -81,7 +81,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/old/get_mem.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../old/get_mem.vhd"/>
         <Attr Name="ImportTime" Val="1567501180"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -90,7 +89,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/old/lab1.vhd">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../old/lab1.vhd"/>
         <Attr Name="ImportTime" Val="1567509114"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -109,11 +107,19 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="Clock_Enable"/>
+      <Option Name="TopModule" Val="lab1"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Lab_1_VHDL_Template/Nexys4_Master_Lab1.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Lab_1_VHDL_Template/Nexys4_Master_Lab1.xdc"/>
+        <Attr Name="ImportTime" Val="1567349003"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>

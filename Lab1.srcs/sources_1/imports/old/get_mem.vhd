@@ -18,7 +18,7 @@ end get_mem;
 
 architecture behavioral of get_mem is
   -- declare address for instr_mem and data_const_mem
-  signal addr : std_logic_vector(8 downto 0) := (others => '0');
+  signal addr : std_logic_vector(6 downto 0) := (others => '0');
 
   -- declare instr_mem and data_const_mem
   type mem_128x32 is array (0 to 127) of std_logic_vector (31 downto 0);
